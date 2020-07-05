@@ -1,0 +1,41 @@
+CodeBook
+
+The script run_Analysis.R does the following-
+
+Dataset is downloaded and extracted from UCI HAR Dataset
+
+Variables that represent the data
+
+featureNames - Comes from features.txt
+activityLabels - comes from activity_labels.txt
+
+Activity files -
+activityTest
+activityTrain
+
+Subject files
+subjectTrain
+subjectTest
+
+Features files
+featureTest
+featureTrain
+
+The activity files/subject files and feature files were merged with rbind() function
+
+Subject data and activity data are merged with cbind() function
+This merged data is then combined with features data to get the final data
+Mean and standard deviation are the only two information extracted in the final data
+
+Dataset has descriptive names
+Acc - Accelerometer
+Gyro - Gyroscope
+Mag - Magnitude
+BodyBody - Body
+f - frequency
+t - time
+
+Independent clean data set is finally produced with mean calculated for each activity/subject
+
+  
+
